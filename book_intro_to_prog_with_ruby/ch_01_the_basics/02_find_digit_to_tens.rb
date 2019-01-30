@@ -5,7 +5,9 @@
 
 FOUR_DIGIT_NUMBER = 5328
 
-puts "The digit in the thousands place for #{FOUR_DIGIT_NUMBER} is #{FOUR_DIGIT_NUMBER/1000}"
-puts "The digit in the hundreds place for #{FOUR_DIGIT_NUMBER} is #{FOUR_DIGIT_NUMBER%1000/100}"
-puts "The digit in the tens place for #{FOUR_DIGIT_NUMBER} is #{FOUR_DIGIT_NUMBER%100/10}"
-puts "The digit in the ones place for #{FOUR_DIGIT_NUMBER} is #{FOUR_DIGIT_NUMBER%10}"
+puts "The 4 digit number is: #{FOUR_DIGIT_NUMBER}"
+puts
+puts "The digit in the thousands place is #{FOUR_DIGIT_NUMBER/1000}"
+puts "The digit in the hundreds place is #{FOUR_DIGIT_NUMBER%1000/100}"
+puts "The digit in the tens place is #{FOUR_DIGIT_NUMBER%100/10}"
+puts "The digit in the ones place is #{FOUR_DIGIT_NUMBER%10}"
