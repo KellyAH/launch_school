@@ -1,25 +1,18 @@
-=begin
-	Add two strings together that, when concatenated, return your first and last name as your full name in one string.
-	"<Firstname> <Lastname>"
-	For example, if your name is John Doe, think about how you can put "John" and "Doe" together to get "John Doe".
-=end
+# URL: https://launchschool.com/books/ruby/read/basics
+#
+# Add two strings together that, when concatenated, return your first and last name as your full name in one string.
+# "<Firstname> <Lastname>"
+# For example, if your name is John Doe, think about how you can put "John" and "Doe" together to get "John Doe".
 
-# string concatenation
-puts "John" + " " + "Doe"
+# + operator
+puts "Kelly" + " " + "Hong"
+puts "Kelly" + " Hong"
 
-# string interpolation
-first_name = 'John'
-last_name = 'Doe'
-puts "#{first_name} #{last_name}"
+# shovel operator
+puts "Kelly "<< "Hong"
 
-# array shovel method
-shoveled_name = first_name << " " << last_name 
-puts shoveled_name
+# concat method
+puts "Kelly".concat(" ", "Hong")
 
-
-# method definition
-def full_name(first_name, last_name)
-	"#{first_name} #{last_name}"
-end
-
-puts full_name('John', 'Doe')
+# prepend method
+puts "Hong".prepend("Kelly", " ")
