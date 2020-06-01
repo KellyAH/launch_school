@@ -9,6 +9,9 @@
 # 2013
 # 2001
 # 1981
+#
+# INPUT: hash of key value pairs made of movie titles and release year
+# OUTPUT: printed release year for all movies
 
 movies = {
   furious_7: 2015,

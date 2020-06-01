@@ -1,9 +1,13 @@
 # URL: https://launchschool.com/books/ruby/read/basics
+#
 # Write a program that outputs the factorial of the numbers 5, 6, 7, and 8.
 
 # A factoral is:
 # Factorials are products of every whole number from 1 to n.
 # For example, if n is 3 then 3! is 3 x 2 x 1 = 6.
+#
+# INPUT: 5, 6, 7, 8
+# OUTPUT: the factorial calculation of the numbers 5, 6, 7, and 8.
 
 puts '-' * 10
 puts 'not using recursion'
