@@ -1,15 +1,25 @@
-# Write a program called name.rb that asks the user to type in their name and then prints out a greeting message with their name included.
+# URL: https://launchschool.com/books/ruby/read/variables
+#
+# Write a program called name.rb
+# that asks the user to type in their name
+# and then prints out a greeting message with their name included.
+#
+# INPUT: user's first and last name
+#
+# OUTPUT: "Hi []user's first] [user's last name]"
 
-def fetch_name
-  puts "Please enter your name:"
-  gets.chomp
-end
+puts 'Please enter your full name and press ENTER:'
 
-def greeting(name)
-  raw_name_array = name.split
-  capitalized_name_array = raw_name_array.each {|word| word.capitalize!}
-  formatted_name = capitalized_name_array.join(' ')
-  "Hello #{formatted_name}!"
-end
+user_name_raw = gets.chomp
 
-puts greeting(fetch_name)
+# change each word in the user's name to be capitalized.
+name_array = user_name_raw.split
+
+formatted_user_name = name_array.map do |name|
+                        p name.capitalize
+                      end
+
+final_user_name = formatted_user_name.join(' ')
+
+puts "Hi #{final_user_name}. How are you?"
+
