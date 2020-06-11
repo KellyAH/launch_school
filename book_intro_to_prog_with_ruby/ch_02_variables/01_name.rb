@@ -8,18 +8,24 @@
 #
 # OUTPUT: "Hi []user's first] [user's last name]"
 
-puts 'Please enter your full name and press ENTER:'
-
-user_name_raw = gets.chomp
+def user_name
+  puts 'Please enter your full name and press ENTER:'
+  gets.chomp
+end
 
 # change each word in the user's name to be capitalized.
-name_array = user_name_raw.split
+def capitalize_name(name)
+  name_array = name.split
+  formatted_user_name = name_array.map(&:capitalize)
+  formatted_user_name.join(' ')
+end
 
-formatted_user_name = name_array.map do |name|
-                        p name.capitalize
-                      end
+def greeting(username)
+  name = capitalize_name(username)
+  "Hi #{name}. How are you?"
+end
 
-final_user_name = formatted_user_name.join(' ')
+puts greeting(user_name)
 
-puts "Hi #{final_user_name}. How are you?"
+
 
