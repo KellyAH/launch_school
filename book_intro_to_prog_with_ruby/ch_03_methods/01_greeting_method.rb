@@ -1,15 +1,26 @@
-# Write a program that prints a greeting message. This program should contain a method called greeting that takes a name as its parameter and returns a string.
-
-def fetch_name
-  puts "Please enter your name:"
-  gets.chomp
-end
+# URL https://launchschool.com/books/ruby/read/methods
+#
+# Write a program that prints a greeting message.
+# This program should contain a method called 'greeting' that
+# takes a 'name' as its parameter and returns a string.
 
 def greeting(name)
-  raw_name_array = name.split
-  capitalized_name_array = raw_name_array.each {|word| word.capitalize!}
-  formatted_name = capitalized_name_array.join(' ')
-  "Hello #{formatted_name}!"
+  "Hi #{name.capitalize}. How are you?"
 end
 
-puts greeting(fetch_name)
+def random_greeting(name)
+  greetings = [
+                "Konnichiwa #{name.capitalize}-san!",
+                "Salut #{name.capitalize}!",
+                "Hola #{name.capitalize}!",
+                "Ciao #{name.capitalize}!",
+                "Szia #{name.capitalize}!"
+              ]
+  greetings.sample
+end
+
+# complete exercise
+p greeting("jin")
+
+# expand on exercise
+p random_greeting("jin")
