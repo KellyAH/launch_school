@@ -8,7 +8,7 @@
 #
 # OUTPUT: "Hi []user's first] [user's last name]"
 
-def user_name
+def username
   puts 'Please enter your full name and press ENTER:'
   gets.chomp
 end
@@ -25,7 +25,7 @@ def greeting(username)
   "Hi #{name}. How are you?"
 end
 
-puts greeting(user_name)
+puts greeting(username)
 
 
 
