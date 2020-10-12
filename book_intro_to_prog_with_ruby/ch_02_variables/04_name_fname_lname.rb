@@ -1,18 +1,30 @@
-# Modify name.rb again so that it first asks the user for their first name, saves it into a variable, and then does the same for the last name. Then outputs their full name all at once.
+# URL: https://launchschool.com/books/ruby/read/variables
+#
+# Modify name.rb again so that it first asks the user
+# for their first name, saves it into a variable,
+# and then does the same for the last name.
+# Then outputs their full name all at once.
 
-def fetch_full_name
-  puts "Please enter your first name:"
+
+def username
+  puts 'Please enter your first name and press ENTER:'
   first_name = gets.chomp
-  puts "Please enter your last name:"
+  puts 'Please enter your last name and press ENTER:'
   last_name = gets.chomp
-  "#{first_name} #{last_name}"
+  [first_name, last_name]
 end
 
-def greeting(name)
-  raw_name_array = name.split
-  capitalized_name_array = raw_name_array.each {|word| word.capitalize!}
-  formatted_name = capitalized_name_array.join(' ')
-  "Hello #{formatted_name}!"
+# change each word in the user's name to be capitalized.
+def capitalize_name(name)
+  formatted_user_name = name.map(&:capitalize)
+  formatted_user_name.join(' ')
 end
 
-puts greeting(fetch_full_name)
+def greeting(username)
+  name = capitalize_name(username)
+  "Hi #{name}. How are you?"
+end
+
+puts greeting(username)
+
+
