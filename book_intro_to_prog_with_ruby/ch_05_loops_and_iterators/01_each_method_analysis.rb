@@ -15,6 +15,7 @@ end
 #    5        |    5       |      6
 
 # According to https://ruby-doc.org/core-2.4.1/Array.html#method-i-each
-# the each method returns the array or Enumerator that invoked it.
+# the each method returns the array that invoked it if a block is given.
+# Or it returns an Enumerator if no block is given.
 
 # Thus it returns [1, 2, 3, 4, 5]
