@@ -25,9 +25,11 @@ puts hash_five
 puts hash_five[:b]
 puts hash_five["c"]
 
-#TODO why can't I do this?
-# puts { a: 1, b: 2 }
-# print { a: 1, b: 2 }
+#INFO: is puts/print hash must pass it with paranthesis
+p ({ a: 1, b: 2 })
+puts ({ a: 1, b: 2 })
+print ({ a: 1, b: 2 })
+print ({ :a => 1, :b => 2})
 
 puts hash_one
 puts hash_one
@@ -36,7 +38,8 @@ puts hash_three
 puts hash_four
 
 ## PASSING A BLOCK TO GENERATE HASH KEY VALUES ON THE FLY ##
-# TODO in what scenerio would I ever need to do this?
+# This is an extension of the default value
+# it makes the default value dependent on the key
 # If a block is specified, it will be called with the hash object and the key, and should return the default value.
 # It is the block’s responsibility to store the value in the hash if required.
 
@@ -45,3 +48,14 @@ hash_six["happy"]
 hash_six["sad"]
 hash_six["asleep"]
 puts hash_six
+
+hash_math = Hash.new {|hash, key| hash[key] = 2 * key }
+hash_math[5]
+puts hash_math
+
+# USE TURNERY IN BLOCK
+# note below is messy to read. not reccomended.
+hash_fruit = Hash.new {|hash, key| hash[key] = key == "banana" ? "yellow" : "dunno"}
+hash_fruit["banana"]
+hash_fruit["apple"]
+puts hash_fruit
