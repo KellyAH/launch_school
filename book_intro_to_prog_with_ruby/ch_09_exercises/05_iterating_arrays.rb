@@ -1,3 +1,4 @@
+# URL: https://launchschool.com/books/ruby/read/intro_exercises
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # Exercise 4. Appended 11 to the end of the original array. Prepended 0 to the beginning.

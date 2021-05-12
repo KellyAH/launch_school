@@ -1,3 +1,5 @@
+# URL: https://launchschool.com/books/ruby/read/intro_exercises
+#
 # 9. Suppose you have a hash
 original_hash = {a:1, b:2, c:3, d:4}
 

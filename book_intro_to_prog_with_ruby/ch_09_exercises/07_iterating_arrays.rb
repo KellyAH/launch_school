@@ -1,3 +1,5 @@
+# URL: https://launchschool.com/books/ruby/read/intro_exercises
+#
 # What's the major difference between an Array and a Hash?
 
 # array is a list of objects stored in indexes.
