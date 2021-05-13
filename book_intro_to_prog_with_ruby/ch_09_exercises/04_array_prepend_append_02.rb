@@ -7,7 +7,6 @@ numbers.append(11)
 p numbers
 
 # 5. Get rid of 11. And append a 3.
-#
 numbers.delete(11)
 numbers.append(3)
 p numbers
