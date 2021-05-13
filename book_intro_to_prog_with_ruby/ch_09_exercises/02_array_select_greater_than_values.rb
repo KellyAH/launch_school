@@ -5,15 +5,21 @@
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-# inline block
+#---------------------#
+# inline block        #
+#---------------------#
 numbers.each {|number| puts number if number > 5}
 
-# multi-line block with inline if condition
+#-------------------------------------------#
+# multi-line block with inline if condition #
+#-------------------------------------------#
 numbers.each do |number|
   puts number if number > 5
 end
 
-# multi-line block with multi-line if condition
+#-----------------------------------------------#
+# multi-line block with multi-line if condition #
+#-----------------------------------------------#
 numbers.each do |number|
   if number > 5
     puts number

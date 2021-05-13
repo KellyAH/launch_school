@@ -4,10 +4,14 @@
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-# inline block
+#---------------------#
+# multi-line block    #
+#---------------------#
 numbers.each {|number| puts number}
 
-# multi-line block
+#---------------------#
+# multi-line block    #
+#---------------------#
 numbers.each do |number|
   puts number
 end

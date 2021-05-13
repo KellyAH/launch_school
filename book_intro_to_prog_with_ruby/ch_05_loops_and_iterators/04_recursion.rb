@@ -1,6 +1,6 @@
 # URL: https://launchschool.com/books/ruby/read/loops_iterators
 #
-# Write a method that counts down to zero using recursion.
+# 4. Write a method that counts down to zero using recursion.
 #
 # good video explanation of recursion: https://en.hexlet.io/courses/intro_to_programming/lessons/recursion/theory_unit
 # good walkthru: https://www.youtube.com/watch?v=6FE0V7kOHLI
