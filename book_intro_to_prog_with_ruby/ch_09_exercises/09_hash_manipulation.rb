@@ -1,3 +1,5 @@
+# URL: https://launchschool.com/books/ruby/read/intro_exercises
+#
 # 9. Suppose you have a hash
 original_hash = {a:1, b:2, c:3, d:4}
 
@@ -45,17 +47,22 @@ puts "new_hash after select!: #{new_hash}"
 puts "original_hash after select!: #{original_hash}"
 
 p "---"*5
-## TODO how to return nil
-# see select! method
+## Make select! return nil
+# see select! method: https://ruby-doc.org/core-2.6.5/Hash.html#method-i-delete
 # Equivalent to #keep_if, but returns nil if no changes were made.
 
-puts mutate_result = new_hash.select! {|key, value| value < 0}
+puts new_hash
+
+## make .select! return nil ##
+# NOTE: Aliases make code easier to read.
+# aliases keep_if does not return nil
+# alias filter! is the standard method and can return nil
+#
+# puts mutate_result = new_hash.filter! {|key, value| value > 0}
+# puts mutate_result = new_hash.keep_if {|key, value| value > 0}
+puts mutate_result = new_hash.select! {|key, value| value > 0}
 puts "new_hash: #{new_hash}"
 puts "original_hash: #{original_hash}"
-# results in a hash of nils?
+# results in nil
+puts mutate_result
 puts mutate_result.class
-
-
-if nil? == new_hash.select! {|key, value| value < 0}
-  puts "is nil"
-end
