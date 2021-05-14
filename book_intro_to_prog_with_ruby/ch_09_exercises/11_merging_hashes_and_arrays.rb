@@ -23,4 +23,4 @@ contacts["Sally Johnson"][:phone] = contact_data[1][2]
 
 puts contacts
 
-# USING METHODS
+# Alt Solution using other methods - See 16_challenge.rb
