@@ -1,3 +1,5 @@
+# Deep dive with Lailson 4/14/2021
+
 # How to create a regex capture group
 # the solution that Launch school posts to exercise 1 uses [regex] =~ word instead of word =~ [regex].
 # URL: https://launchschool.com/books/ruby/read/more_stuff#regex
