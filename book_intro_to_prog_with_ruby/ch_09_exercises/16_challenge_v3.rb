@@ -17,34 +17,13 @@ contact_data = ["joe@email.com", "123 Main st.", "555-123-4567"]
 contacts = {"Joe Smith" => {}}
 keys = [:email, :address, :phone]
 
+keys.zip(contact_data)
+#=> [[:email, "joe@email.com"], [:address, "123 Main st."], [:phone, "555-123-4567"]]
+
+
+# using Hash class method []
+# see https://ruby-doc.org/core-2.6.5/Hash.html#method-c-5B-5D
+# which is different than the Hash object instance method that looks the same []
+# see https://ruby-doc.org/core-2.6.5/Hash.html#method-i-5B-5D
+contacts = Hash[keys.zip(contact_data)]
 p contacts
-
-# assigned keys with empty values
-keys.each do |key|
-  # puts "key: #{key}"
-  empty_hash = contacts["Joe Smith"]
-  empty_hash[key] = nil
-end
-
- p contacts
-
-
-# # using key value params
-contact_data.each do |value|
-  contacts["Joe Smith"].each_key do |key|
-    # iterating thru arrays/hashes reads data from those objs but does not change access scope.
-    # E.g. iterating thru this hash does NOT mean i'm inside it and thus cannot invoke the hash itself.
-    # in ruby, iterating a hash/array does not explode it.
-    contacts["Joe Smith"][key] = value
-  end
-end
-
-
-
-
-# # using entries
-# contacts["Joe Smith"].each do |entry|
-
-
-p contacts
-# using zip

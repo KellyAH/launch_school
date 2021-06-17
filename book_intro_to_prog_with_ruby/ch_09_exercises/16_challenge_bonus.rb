@@ -14,7 +14,38 @@
 #    "Sally Johnson"=>{:email=>"sally@email.com", :address=>"404 Not Found Dr.",  :phone=>"123-234-3454"}
 #  }
 
+
 contact_data = [["joe@email.com", "123 Main st.", "555-123-4567"],
                 ["sally@email.com", "404 Not Found Dr.", "123-234-3454"]]
-
 contacts = {"Joe Smith" => {}, "Sally Johnson" => {}}
+keys = [:email, :address, :phone]
+
+# alt 1
+# contacts.each_with_index do |(key, _value_), index|
+#   contacts[key] = Hash[keys.zip(contact_data[index])]
+# end
+#
+# p contacts
+
+# ALt 2
+# contacts.keys.each_with_index do |key, index|
+#   contacts[key] = Hash[keys.zip(contact_data[index])]
+# end
+#
+# p contacts
+
+# alt 3
+contacts.keys.each.with_index do |key, index|
+  contacts[key] = Hash[keys.zip(contact_data[index])]
+end
+
+p contacts
+
+# keys.zip(contact_data)
+# contacts.each.with_index
+# .each creates a enumerator
+# .with_index
+#
+# are each.with_index == each_with_index => false but functionally equal
+# p contacts.each_with_index
+# p contacts.each

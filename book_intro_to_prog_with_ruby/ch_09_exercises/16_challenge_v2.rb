@@ -20,31 +20,8 @@ keys = [:email, :address, :phone]
 p contacts
 
 # assigned keys with empty values
-keys.each do |key|
-  # puts "key: #{key}"
-  empty_hash = contacts["Joe Smith"]
-  empty_hash[key] = nil
+keys.each_with_index do |key, index|
+  contacts["Joe Smith"][key] = contact_data[index]
 end
 
  p contacts
-
-
-# # using key value params
-contact_data.each do |value|
-  contacts["Joe Smith"].each_key do |key|
-    # iterating thru arrays/hashes reads data from those objs but does not change access scope.
-    # E.g. iterating thru this hash does NOT mean i'm inside it and thus cannot invoke the hash itself.
-    # in ruby, iterating a hash/array does not explode it.
-    contacts["Joe Smith"][key] = value
-  end
-end
-
-
-
-
-# # using entries
-# contacts["Joe Smith"].each do |entry|
-
-
-p contacts
-# using zip
