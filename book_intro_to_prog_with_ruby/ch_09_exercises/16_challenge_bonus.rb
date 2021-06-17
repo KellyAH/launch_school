@@ -35,11 +35,11 @@ keys = [:email, :address, :phone]
 # p contacts
 
 # alt 3
-contacts.keys.each.with_index do |key, index|
-  contacts[key] = Hash[keys.zip(contact_data[index])]
-end
-
-p contacts
+# contacts.keys.each.with_index do |key, index|
+#   contacts[key] = Hash[keys.zip(contact_data[index])]
+# end
+#
+# p contacts
 
 # keys.zip(contact_data)
 # contacts.each.with_index
@@ -47,5 +47,12 @@ p contacts
 # .with_index
 #
 # are each.with_index == each_with_index => false but functionally equal
-# p contacts.each_with_index
-# p contacts.each
+p contacts.each
+p contacts.each_with_index
+
+p contacts.keys
+p contacts.keys.each_with_index
+
+p contacts.keys
+p contacts.keys.each
+p contacts.keys.each.with_index
