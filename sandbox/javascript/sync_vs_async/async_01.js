@@ -1,8 +1,12 @@
-// Async -> not occureing at the same time
+// Async -> not occuring at the same time
 // - fetch data from server
 // - execute X with a delay
 // - execute X after an event
 // https://www.youtube.com/watch?v=pIjfzjsoVw4&t=7s&ab_channel=TapasAdhikary
+
+// Async functions are triggered by:
+// 1. web APIs: setTimeout, click, mouse over
+// 2. Promises
 
 function printMe() {
   console.log("Hi");
