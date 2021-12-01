@@ -76,7 +76,7 @@ sayFarewell02('Toel', (name) => name.toLowerCase());
 
 
 
-// js is not strict abut passed args
+// js is not strict about passed args
 function say(name) {
   console.log('hello world' + name.toLowerCase());
 }
