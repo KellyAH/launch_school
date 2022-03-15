@@ -10,8 +10,7 @@ multi nested callbacks -> callback hell
 
 function asyncTask(callback) {
   console.log('in asyncTask');
-  // setTimeout() method sets a timer which executes a function
-  // or specified piece of code once the timer expires.
+  // setTimeout() method executes a function / some code after a number of milliseconds.
   setTimeout(() => {
     console.log('in set timeout call back for asyncTask');
     callback(null, "This is data from server");

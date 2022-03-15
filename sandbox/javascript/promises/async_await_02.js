@@ -1,4 +1,3 @@
-// TODO async await - syntactic sugar that uses promises,
 // used to write async code that looks syncronous
 
 // can cause race conditions

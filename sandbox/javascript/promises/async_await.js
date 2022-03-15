@@ -1,9 +1,11 @@
-// TODO async await - syntactic sugar that uses promises,
 // used to write async code that looks syncronous
 
 // can cause race conditions
 // for JS it's best to write code assuming that it's all async. not sync. so you don't mentally trip over
 
+// async and await must be used together.
+// is SYNTACTIAL SUGAR that makes promises easier to work with.
+// https://www.youtube.com/watch?v=V_Kr9OSfDeU&ab_channel=WebDevSimplified
 // mimic syncrnous functon calls in it's steps
 // guarentees order of opereations
 // prefered for readability
