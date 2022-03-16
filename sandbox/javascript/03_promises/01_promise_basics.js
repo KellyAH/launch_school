@@ -2,6 +2,9 @@
 
 // promises are for dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code. 
 
+// https://www.freecodecamp.org/news/async-await-javascript-tutorial/
+// we can use promises to do asynchronous work, and to be sure that we can handle any result from those promises. When we use promises, we chain our functions onto the promise to handle the different scenarios.
+
 // https://www.geeksforgeeks.org/javascript-promises/
 
 // create a promise via Promise constructor
