@@ -2,16 +2,14 @@
 multi nested callbacks -> callback hell
 
 * async execution call chaining callbacks
-
 * not easily readable
 * not easy to debug
-*  fix with promises or async await
+* fix with promises or async await
 */
 
 function asyncTask(callback) {
   console.log('in asyncTask');
-  // setTimeout() method sets a timer which executes a function
-  // or specified piece of code once the timer expires.
+  // setTimeout() method executes a function / some code after a number of milliseconds.
   setTimeout(() => {
     console.log('in set timeout call back for asyncTask');
     callback(null, "This is data from server");
@@ -25,6 +23,9 @@ function makeApiCall(callback) {
     callback();
   }, 500)
 }
+
+// CALLBACK HELL / AKA PYRAMID OF DOOM
+// also see https://www.codingame.com/playgrounds/347/javascript-promises-mastering-the-asynchronous/the-challenges-of-the-asynchronous
 
 makeApiCall(() => {
   console.log('4');

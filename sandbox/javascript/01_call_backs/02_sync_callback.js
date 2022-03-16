@@ -1,8 +1,10 @@
+// TODO: Clean up, break out
+
 /* CALLBACKS
 A callback is a function passed as an argument to another function
-This technique allows a function to call another function
-A callback function can run after another function has finished
+This technique allows a function to call another function.
 
+A callback function can run after another function has finished.
 are SYNCRONOUS!
 but can be executed in async mode
 
@@ -24,12 +26,11 @@ function lowercasedName(name = 'Sara') {
   return name.toLowerCase();
 }
 
-// save function to var aka function expression
+// save function to var AKA function expression
 let new_name = function (name = 'Sara') {
   return '3' + name.toLowerCase();
 }
 
-// save function to var aka function expression
 const new_name_too = function (name = 'Sara') {
   return '5' + name.toLowerCase();
 }
@@ -46,8 +47,6 @@ function sayFarewell(callback) {
 function sayFarewell02(name, callback) {
   console.log("Bye" + ' ' + callback(name));
 }
-
-
 
 // pass function to invoking function via function name
 sayGreeting(uppercasedName);

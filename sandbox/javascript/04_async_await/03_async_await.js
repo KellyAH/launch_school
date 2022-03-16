@@ -1,4 +1,5 @@
-// TODO async await - syntactic sugar that uses promises,
+// README: https://www.freecodecamp.org/news/async-await-javascript-tutorial/
+
 // used to write async code that looks syncronous
 
 // can cause race conditions
