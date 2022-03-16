@@ -26,7 +26,7 @@ function lowercasedName(name = 'Sara') {
   return name.toLowerCase();
 }
 
-// save function to var aka function expression
+// save function to var AKA function expression
 let new_name = function (name = 'Sara') {
   return '3' + name.toLowerCase();
 }

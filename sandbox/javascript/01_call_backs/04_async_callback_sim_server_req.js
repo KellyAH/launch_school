@@ -6,7 +6,7 @@
 // visualize call stack and callback queue
 // http://latentflip.com/loupe
 function serverRequest(query, callback){
-  setTimeout(function(){
+  setTimeout(function(){      // setTimeout() is an asynchronous function
     let response = query + "full!";
     callback(response);
   }, 3000);

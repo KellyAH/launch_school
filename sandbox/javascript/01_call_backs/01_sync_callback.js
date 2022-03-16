@@ -1,7 +1,9 @@
 // https://www.freecodecamp.org/news/what-is-a-callback-function-in-javascript/
+// A callback function is a function that is passed as an argument to another function, to be “called back” at a later time. 
 
 // A higher-order function - accepts other functions as arguments.
 // Contains the logic for when the callback function gets executed.
+// ?! -- synchronous callback -- !? //
 function createQuote(quote, callback){
   let myQuote = "I say: " + quote;
   callback(myQuote);
