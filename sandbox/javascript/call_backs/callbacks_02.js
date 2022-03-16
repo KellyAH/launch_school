@@ -1,16 +1,17 @@
-// CALL BACK EXAMPLE
 // https://www.learn-js.org/en/Callbacks
 
-// ------- //
-// 1. save defined function to a varaible.
-// 2. pass variable into setTimeout
-// waits 5 seconds and prints out "Done!" when the 5 seconds are up.
+// CALL BACK EXAMPLE USING setTimeout
+
+// 1. save anonomous function to a varaible.
 let callback = function() {
     console.log("done!");
 };
+
+// 2. pass variable into setTimeout, which takes a callback: https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
+// It waits 5 seconds and prints out "Done!" when 5 seconds have elapsed.
 setTimeout(callback, 5000);
 
-// rewritten with the callbacks defined as an anonymous function
+// anonymous function callbacks defined in the setTimeout and not save to variable
 setTimeout(function() {
     console.log("Done!");
 }, 5000);

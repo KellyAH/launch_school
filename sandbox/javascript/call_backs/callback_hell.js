@@ -2,10 +2,9 @@
 multi nested callbacks -> callback hell
 
 * async execution call chaining callbacks
-
 * not easily readable
 * not easy to debug
-*  fix with promises or async await
+* fix with promises or async await
 */
 
 function asyncTask(callback) {
@@ -24,6 +23,9 @@ function makeApiCall(callback) {
     callback();
   }, 500)
 }
+
+// CALLBACK HELL / AKA PYRAMID OF DOOM
+// also see https://www.codingame.com/playgrounds/347/javascript-promises-mastering-the-asynchronous/the-challenges-of-the-asynchronous
 
 makeApiCall(() => {
   console.log('4');
